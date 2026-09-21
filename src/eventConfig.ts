@@ -45,7 +45,7 @@ export const eventConfig = {
     scratchRevealMs: 1100,
   },
   scratch: {
-    completionPercent: 60,
+    completionPercent: 30,
     brushSize: 62,
   },
   stamp: {

@@ -324,7 +324,7 @@ export default function App() {
             <button className="btn-back" type="button" onClick={goHome} aria-label={eventConfig.copy.backHome}>←</button>
             <BrandLogo size="md" />
           </div>
-          <p className="section-kicker">{eventConfig.copy.boothName} · {eventConfig.copy.boothKicker}</p>
+          <p className="section-kicker">{eventConfig.copy.boothKicker}</p>
           <div
             className={`stamp-card-zone${isStamping ? ' is-stamping' : ''}`}
             role="button"
@@ -338,7 +338,7 @@ export default function App() {
               }
             }}
           >
-            <PortraitArtwork src={eventConfig.stamp.image} label={eventConfig.copy.boothName} />
+            <PortraitArtwork src={eventConfig.stamp.image} label={eventConfig.copy.boothKicker} />
             {isStamping && (
               <div className="seal-overlay" aria-hidden="true">
                 <div className="seal-impact" />
@@ -346,7 +346,6 @@ export default function App() {
                   <div className="seal-rect">
                     <span>{eventConfig.copy.stampEventLine}</span>
                     <img src={eventConfig.brand.logo} className="seal-logo" alt="" />
-                    <strong>{eventConfig.copy.stampBooth}</strong>
                     <span className="seal-bottom">{eventConfig.copy.stampValidated}</span>
                   </div>
                   <div className="seal-pulse" />
