@@ -1,0 +1,11 @@
+{
+  "title": "CrossFire Legend — Digital Stamp Passport",
+  "description": "Chạm thẻ đóng dấu và nhận quà tặng đặc biệt từ CrossFire Legend.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
