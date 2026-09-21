@@ -361,18 +361,14 @@ export default function App() {
         <section className="screen reward-screen">
           <div className="screen-header with-back">
             <button className="btn-back" type="button" onClick={goHome} aria-label={eventConfig.copy.backHome}>←</button>
-            <p className="reward-booth-label">{eventConfig.copy.boothName}</p>
           </div>
 
           {isRewarded ? (
             <div className="reward-revealed">
               <div className="reward-pill-header">{eventConfig.copy.yourReward}</div>
+              <h2 className="revealed-name-top">{reward.name}</h2>
               <div className="revealed-card">
                 <PortraitArtwork src={reward.image} label={reward.name} />
-              </div>
-              <div className="prize-caption">
-                <p className="revealed-tag">{eventConfig.copy.received}</p>
-                <strong className="revealed-name">{reward.name}</strong>
               </div>
               <button className="primary-btn pill home-btn-big" type="button" onClick={goHome}>
                 {eventConfig.copy.backHome} <span>→</span>
