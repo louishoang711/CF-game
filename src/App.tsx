@@ -320,8 +320,7 @@ export default function App() {
     >
       {screen === 'booth' && (
         <section className="screen booth-screen">
-          <div className="screen-header with-back">
-            <button className="btn-back" type="button" onClick={goHome} aria-label={eventConfig.copy.backHome}>←</button>
+          <div className="screen-header">
             <BrandLogo size="md" />
           </div>
           <p className="section-kicker">{eventConfig.copy.boothKicker}</p>
@@ -358,9 +357,6 @@ export default function App() {
 
       {screen === 'reward' && reward && (
         <section className="screen reward-screen">
-          <div className="screen-header with-back">
-            <button className="btn-back" type="button" onClick={goHome} aria-label={eventConfig.copy.backHome}>←</button>
-          </div>
 
           {isRewarded ? (
             <div className="reward-revealed">
