@@ -35,7 +35,7 @@ export const eventConfig = {
     stampEventLine: "CROSSFIRE LEGENDS · 2026",
     stampValidated: "VALIDATED",
     openReward: "Hãy Mở Phần Quà Của Bạn",
-    yourReward: "Chúc mừng bạn nhận được 01",
+    yourReward: "Chúc mừng bạn nhận được",
     received: "BẠN ĐÃ NHẬN ĐƯỢC",
     backHome: "Về trang chủ",
     scratchAriaLabel: "Cào thẻ nhận quà, hoặc nhấn Enter để mở",
@@ -54,25 +54,25 @@ export const eventConfig = {
   rewards: [
     {
       id: "sticker",
-      name: "Sticker CFL",
+      name: "01 Sticker CFL",
       image: "/event-assets/stickerCFL.jpg",
       chancePercent: 50,
     },
     {
       id: "mockhoa",
-      name: "Móc khóa CFL",
+      name: "01 Móc khóa CFL",
       image: "/event-assets/mockhoaCFL.jpg",
       chancePercent: 25,
     },
     {
       id: "tui",
-      name: "Túi xách CFL",
+      name: "01 Túi xách CFL",
       image: "/event-assets/tuiCFL.jpg",
       chancePercent: 15,
     },
     {
       id: "hopgau",
-      name: "Hộp gấu CFL",
+      name: "01 Hộp gấu CFL",
       image: "/event-assets/hopgauCFL.jpg",
       chancePercent: 10,
     },
