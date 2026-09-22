@@ -313,7 +313,7 @@ export default function App() {
         '--red': eventConfig.theme.primary,
         '--seal': eventConfig.theme.seal,
         '--ink': eventConfig.theme.ink,
-        '--white': eventConfig.theme.background,
+        '--white': '#ffffff',
         '--muted': eventConfig.theme.muted,
         '--border': eventConfig.theme.border,
       } as CSSProperties}

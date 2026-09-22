@@ -132,19 +132,16 @@ h1 {
   display: flex;
   align-items: center;
 }
-.section-kicker {
-  min-height: 28px;
+.section-kicker,
+.reward-pill-header {
   margin: 0 8px 16px;
-  padding: 7px 16px;
+  padding: 14px 20px;
   border-radius: 999px;
   background: var(--red);
   color: var(--white);
   text-align: center;
-  font: 700 16px/1.2 var(--sans);
+  font: 700 22px var(--sans);
   letter-spacing: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .primary-btn {
@@ -401,18 +398,6 @@ h1 {
   max-height: none;
   margin: 0 8px 16px;
 }
-.reward-pill-header {
-  background: var(--red);
-  color: var(--white);
-  text-align: center;
-  padding: 14px 20px;
-  border-radius: 999px;
-  font: 700 22px var(--sans);
-  margin-bottom: 16px;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
 .scratch-center {
   flex: none;
   display: block;
