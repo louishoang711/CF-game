@@ -35,7 +35,7 @@ export const eventConfig = {
     stampEventLine: 'CROSSFIRE LEGENDS · 2026',
     stampValidated: 'VALIDATED',
     openReward: 'Hãy Mở Phần Quà Của Bạn',
-    yourReward: 'Phần Quà Của Bạn',
+    yourReward: 'Chúc mừng bạn nhận được 01',
     received: 'BẠN ĐÃ NHẬN ĐƯỢC',
     backHome: 'Về trang chủ',
     scratchAriaLabel: 'Cào thẻ nhận quà, hoặc nhấn Enter để mở',

@@ -24,8 +24,8 @@ function PortraitArtwork({ src, label }: { src: string; label: string }) {
   )
 }
 
-function BrandLogo({ size = 'md' }: { size?: 'sm' | 'md' | 'lg' }) {
-  return <img src={eventConfig.brand.logo} className={`brand-logo brand-logo--${size}`} alt={eventConfig.brand.name} />
+function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg'; className?: string }) {
+  return <img src={eventConfig.brand.logo} className={`brand-logo brand-logo--${size} ${className}`.trim()} alt={eventConfig.brand.name} />
 }
 
 interface Flake {
@@ -321,7 +321,7 @@ export default function App() {
       {screen === 'booth' && (
         <section className="screen booth-screen">
           <div className="screen-header">
-            <BrandLogo size="md" />
+            <BrandLogo size="lg" className="booth-brand-logo" />
           </div>
           <p className="section-kicker">{eventConfig.copy.boothKicker}</p>
           <div
@@ -360,6 +360,7 @@ export default function App() {
 
           {isRewarded ? (
             <div className="reward-revealed">
+              <BrandLogo size="lg" className="reward-brand-logo" />
               <div className="reward-pill-header">{eventConfig.copy.yourReward}</div>
               <h2 className="revealed-name-top">{reward.name}</h2>
               <div className="revealed-card">
@@ -371,6 +372,7 @@ export default function App() {
             </div>
           ) : (
             <>
+              <BrandLogo size="lg" className="reward-brand-logo" />
               <div className="reward-pill-header">{eventConfig.copy.openReward}</div>
               <div className="scratch-center">
                 <ScratchCard key={reward.id} reward={reward} onComplete={() => setIsRewarded(true)} />
